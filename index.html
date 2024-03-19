@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  onclick="playMenuSound()">
                 Listas
               </a>
               <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
@@ -32,9 +32,14 @@
                 <li><a class="dropdown-item" href="#">Gastronomía</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">En proceso...</a></li>
+                <audio id="menuSound">
+                  <source src="./sound/ay-caramba.mp3" type="audio/mpeg">
+                  Tu navegador no soporta el elemento de audio.
+              </audio>
               </ul>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Con</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
             
           </ul>
@@ -52,7 +57,50 @@
     </nav>
   </header>
 </body>
-<footer>
-
+<footer class="footer bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Redes Sociales</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li>Dirección: 123 Calle Principal, Ciudad</li>
+          <li>Teléfono: +1234567890</li>
+          <li>Email: info@example.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="text-muted">© 2024 A M E R I. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script>
+  function playMenuSound() {
+    var menuSound = document.getElementById("menuSound");
+    menuSound.play();
+  }
+
+  // Ejemplo de cómo puedes llamar a la función cuando se hace clic en un elemento del menú
+  document.getElementById("menuButton").addEventListener("click", playMenuSound);
+</script>
 </html>

@@ -53,3 +53,11 @@
     animation: flipInY 0.5s ease-out forwards;
     backface-visibility: hidden; /* Evitar el parpadeo del contenido en el reverso */
   }
+
+  footer {
+    padding-top: 50px;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
