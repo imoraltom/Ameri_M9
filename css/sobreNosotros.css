@@ -1,114 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
 
-html *{
+html * {
   font-family: "Truculenta", sans-serif;
 }
 .navbar {
-    background-color: black; /* Color de fondo */
-    padding: 1rem 0; /* Espaciado interno */
-  }
-  .navbar-brand img {
-    width: 80px; /* TamaÃ±o del logo */
-  } 
-  .navbar-nav .nav-link {
-    color: white; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    margin: 0 10px;
-    font-size: 20px; /* Espacio entre enlaces */
-  }
-  .navbar-nav .nav-link:hover {
-    color: #ffc107; /* Color del texto al pasar el mouse */
-  }
-  .navbar .btn {
-    color: white ; /*    Color del texto del botÃ³n */
-    background-color: #ffc107; /* Color de fondo del botÃ³n */
-    border: none; /* Sin borde */
-    font-weight: bold;
-    font-size:20px; /* Espacio entre enlaces *//* Negrita */
-  }
-  .navbar .btn:hover {
-    background-color: #ffca28; /* Cambio de color del botÃ³n al pasar el mouse */
-  }
+  background-color: black; /* Color de fondo */
+  padding: 1rem 0; /* Espaciado interno */
+}
+.navbar-brand img {
+  width: 80px; /* Tamaño del logo */
+} 
+.navbar-nav .nav-link {
+  color: white; /* Color del texto */
+  font-weight: bold; /* Negrita */
+  margin: 0 10px;
+  font-size: 20px; /* Espacio entre enlaces */
+}
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Color del texto al pasar el mouse */
+}
+.navbar .btn {
+  color: white ; /*    Color del texto del botón */
+  background-color: #ffc107; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  font-weight: bold;
+  font-size:20px; /* Espacio entre enlaces *//* Negrita */
+}
+.navbar .btn:hover {
+  background-color: #ffca28; /* Cambio de color del botón al pasar el mouse */
+}
 
-  #logo-navbar{
-    height: 100px;
-    width: 100px;
+#logo-navbar{
+  height: 100px;
+  width: 100px;
+}
+
+.dropdown-menu a {
+  color: white; /* Cambiar el color del texto a amarillo */
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotateY(-90deg);
+    opacity: 0;
   }
-
-  .dropdown-menu a {
-    color: white; /* Cambiar el color del texto a amarillo */
-  }
-
-  @keyframes flipInY {
-    from {
-      transform: perspective(400px) rotateY(-90deg);
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    to {
-      transform: perspective(400px) rotateY(0deg);
-      opacity: 1;
-    }
-  }
-
-  /* Aplicar la animaciÃ³n a las opciones del desplegable */
-  .dropdown-menu .dropdown-item {
-    animation: flipInY 0.5s ease-out forwards;
-    backface-visibility: hidden; /* Evitar el parpadeo del contenido en el reverso */
-  }
-
-  footer {
-    padding-top: 50px;
-  }
-
-  footer a {
-    text-decoration: none;
-  }
-
-  .descripcion{
-    padding-top: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto; 
-    position: relative;
-    z-index: 2;
-  }
-
-  .descripcion h1{
-
-    font-size: 3.5rem;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    margin-bottom: 700px;
-  }
-
-  #hero{
-    min-height: 100hv;
-    position:relative;
-  }
-
-  video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-  }
-
-  .capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
+  50% {
     opacity: 0.5;
-    mix-blend-mode: overlay;
   }
+  to {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Aplicar la animación a las opciones del desplegable */
+.dropdown-menu .dropdown-item {
+  animation: flipInY 0.5s ease-out forwards;
+  backface-visibility: hidden; /* Evitar el parpadeo del contenido en el reverso */
+}
+
+footer {
+  padding-top: 50px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.descripcion{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
+  position: relative;
+  z-index: 2;
+}
+.descripcion h2{
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 200px;
+}
+
+.descripcion p{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 300px;
+  
+}
+#hero{
+  min-height: 100hv;
+  position:relative;
+}
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+} 
