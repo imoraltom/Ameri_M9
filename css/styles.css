@@ -22,7 +22,9 @@
     font-size:20px; /* Espacio entre enlaces *//* Negrita */
   }
   .navbar .btn:hover {
-    background-color: #ffca28; /* Cambio de color del botón al pasar el mouse */
+    a {
+      background-color: #ffca28; /* Cambio de color del botón al pasar el mouse */
+    }
   }
 
   #logo-navbar{

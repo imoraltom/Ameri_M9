@@ -1,5 +1,5 @@
 .formulario {
-  background-color: rgb(63, 63, 63); /* Color de fondo principal */
+  background-color: rgb(101, 101, 101); /* Color de fondo principal */
 }
 
 .card {
@@ -15,19 +15,20 @@
   border-radius: 5px; /* Bordes redondeados para los campos de entrada */
 }
 
-.btn-formulario {
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
+.formulario .btn {
+  color: white ; /*    Color del texto del botón */
+  background-color: #ffc107; /* Color de fondo del botón */
   border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  padding: 10px 20px; /* Espaciado interno */
-  cursor: pointer; /* Cambio de cursor al pasar el mouse */
-  width: 100%;
-  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  font-weight: bold;
+  font-size:20px; /* Espacio entre enlaces *//* Negrita */
+}
+.formulario .btn:hover {
+  a {
+    color: blue;
+  }
 }
 
-.btn-formulario:hover {
-  color: yellow;
-  background-color: black; /* Color de fondo al pasar el mouse */
+.formulario .btn a {
+  text-decoration: none;
+  color: white;
 }
-  
