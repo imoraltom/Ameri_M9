@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Esto evita el desplazamiento vertical */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1; /* Esto permite que el contenido se expanda para llenar el espacio restante */
+    overflow-y: auto; /* Si el contenido es demasiado grande para caber en la pantalla, se agregará un scroll vertical */
+  }
+
+  .container-top {
+    margin-top: 70px; /* Ajusta la separación entre el primer contenedor y la navbar */
+  }
+  
+  .container-bottom {
+    margin-top: 20px; /* Ajusta la separación entre los dos contenedores */
+  }
+  
+  /* Estilo para el video de fondo */
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho al 100% de la ventana del navegador */
+    height: 100%; /* Ajusta el alto al 100% de la ventana del navegador */
+    object-fit: cover; /* Recorta el video para ajustarse al tamaño del contenedor */
+    z-index: -1; /* Coloca el video detrás del contenido */
+  }
