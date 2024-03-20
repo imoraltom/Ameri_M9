@@ -1,73 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta&display=swap");
+
+html * {
+  font-family: "Truculenta", sans-serif;
+}
+
 .navbar {
-    background-color: black; /* Color de fondo */
-    padding: 1rem 0; /* Espaciado interno */
-  }
-  .navbar-brand img {
-    width: 80px; /* Tamaño del logo */
-  } 
-  .navbar-nav .nav-link {
-    color: white; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    margin: 0 10px;
-    font-size: 20px; /* Espacio entre enlaces */
-  }
-  .navbar-nav .nav-link:hover {
-    color: #ffc107; /* Color del texto al pasar el mouse */
-  }
-  .navbar .btn {
-    color: white ; /*    Color del texto del botón */
-    background-color: #ffc107; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    font-weight: bold;
-    font-size:20px; /* Espacio entre enlaces *//* Negrita */
-  }
-  .navbar .btn:hover {
-    a {
-      background-color: #ffca28; /* Cambio de color del botón al pasar el mouse */
-    }
-  }
+  background-color: black; /* Color de fondo */
+  padding: 1rem 0; /* Espaciado interno */
+}
 
-  #logo-navbar{
-    height: 100px;
-    width: 100px;
-  }
+.navbar-brand img {
+  width: 80px; /* Tamaño del logo */
+}
 
-  .dropdown-menu a {
-    color: white; /* Cambiar el color del texto a amarillo */
-  }
+.navbar-nav .nav-link {
+  color: white; /* Color del texto */
+  font-weight: bold; /* Negrita */
+  margin: 0 10px;
+  font-size: 20px; /* Espacio entre enlaces */
+}
 
-  @keyframes flipInY {
-    from {
-      transform: perspective(400px) rotateY(-90deg);
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    to {
-      transform: perspective(400px) rotateY(0deg);
-      opacity: 1;
-    }
-  }
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Color del texto al pasar el mouse */
+}
 
-  /* Aplicar la animación a las opciones del desplegable */
-  .dropdown-menu .dropdown-item {
-    animation: flipInY 0.5s ease-out forwards;
-    backface-visibility: hidden; /* Evitar el parpadeo del contenido en el reverso */
-  }
+.navbar .btn {
+  color: white; /*    Color del texto del botón */
+  background-color: #ffc107; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  font-weight: bold;
+  font-size: 20px; /* Espacio entre enlaces */ /* Negrita */
+}
 
-  footer {
-    padding-top: 50px;
-  }
+.navbar .btn a{
+  color: white; /*    Color del texto del botón */
+  background-color: #ffc107; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  font-weight: bold;
+  font-size: 20px; /* Espacio entre enlaces */ /* Negrita */
+  text-decoration: none;
+}
 
-  footer a {
-    text-decoration: none;
+
+#logo-navbar {
+  height: 100px;
+  width: 100px;
+}
+
+.dropdown-menu a {
+  color: white; /* Cambiar el color del texto a amarillo */
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotateY(-90deg);
+    opacity: 0;
   }
-<<<<<<< HEAD
-=======
-  
-  header a {
-    text-decoration: none;
-    color: white;
+  50% {
+    opacity: 0.5;
   }
->>>>>>> ac2ab420d36cebf268ef969d0660846c664287ea
+  to {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Aplicar la animación a las opciones del desplegable */
+.dropdown-menu .dropdown-item {
+  animation: flipInY 0.5s ease-out forwards;
+  backface-visibility: hidden; /* Evitar el parpadeo del contenido en el reverso */
+}
+
+footer {
+  padding-top: 50px;
+}
+
+footer a {
+  text-decoration: none;
+}
