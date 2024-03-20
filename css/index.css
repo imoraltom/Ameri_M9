@@ -17,19 +17,47 @@ html, body {
 
   .container-top {
     margin-top: 70px; /* Ajusta la separación entre el primer contenedor y la navbar */
+    border-color: black;
   }
   
   .container-bottom {
     margin-top: 20px; /* Ajusta la separación entre los dos contenedores */
+    margin-bottom: 30px;
+    border-color: black;
   }
+
+  .card img {
+    max-width: 100%; /* Limita el ancho máximo de las imágenes al ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción de las imágenes */
+  }
+
+  .card {
+    margin-right: 25px; /* Margen derecho entre las cartas */
+    margin-left: 25px; /* Margen izquierdo entre las cartas */
+
+  }
+
+  .card-body {
+    color: black; /* Cambia el color del texto para que sea legible en el fondo claro */
+    background-color:burlywood;
+
+  }
+
   
   /* Estilo para el video de fondo */
   video {
-    position: fixed;
+    position:absolute; /* Cambia la posición a absolute */
     top: 0;
     left: 0;
-    width: 100%; /* Ajusta el ancho al 100% de la ventana del navegador */
-    height: 100%; /* Ajusta el alto al 100% de la ventana del navegador */
-    object-fit: cover; /* Recorta el video para ajustarse al tamaño del contenedor */
-    z-index: -1; /* Coloca el video detrás del contenido */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+
+  #hero {
+    overflow-y: auto; /* Agrega un scroll vertical mínimo para el contenido */
+    height: 100vh; /* Ajusta la altura al 100% de la ventana del navegador */
+    
   }
